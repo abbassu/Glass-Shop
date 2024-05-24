@@ -1,0 +1,40 @@
+/* Navbar container */
+header {
+  background-color: #333; /* Dark gray background color */
+  color: #fff; /* White text color */
+  padding: 20px; /* Padding around the content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.lala {
+}
+/* Navbar title */
+h1 {
+  margin: 0; /* Remove default margin */
+}
+
+/* Navbar navigation */
+nav ul {
+  list-style-type: none; /* Remove default list bullet */
+  padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+  display: inline-block; /* Display list items horizontally */
+  margin: 0 20px; /* Add some space between list items */
+  padding: 4px 8px;
+  background-color: rgb(101, 99, 95);
+  border-radius: 5px;
+}
+
+nav ul li a {
+  color: #fff; /* White text color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+nav ul li a:hover {
+  color: #ffc107; /* Yellow text color on hover */
+}

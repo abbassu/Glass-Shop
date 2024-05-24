@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import ClientForm from "./component/clientform/ClientForm";
+import ClientList from "./component/clientlist/ClientList";
+import YourComponent from "./component/testtt";
+import NewClientForm from "./component/warshat/warshat";
+import HsabatForm from "./component/hesabat/hesabat";
+import Warshat from "./component/warshat/warshat";
+import Nopage from "./component/nopage/nopage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./component/layout/Layout";
+import ClientAccounts from "./component/hesablist/hesablist";
+import Management from "./component/managment/management";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Warshat />} />
+          <Route path="ClientList" element={<ClientList />} />
+          <Route path="NewClientForm" element={<NewClientForm />} />
+          <Route path="HsabatForm" element={<HsabatForm />} />
+          <Route path="ClientForm" element={<ClientForm />} />
+          <Route path="ClientAccounts" element={<ClientAccounts />} />
+          <Route path="newadd" element={<ClientAccounts />} />
+
+          <Route path="*" element={<Nopage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

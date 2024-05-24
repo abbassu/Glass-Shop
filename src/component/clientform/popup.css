@@ -1,0 +1,34 @@
+/* Popup.css */
+.popup {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  z-index: 999;
+  animation: fadeInOut 4s ease-out;
+  font-weight: 600;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.popup.success {
+  background-color: #00cc66; /* Green background color for success */
+}
+
+/* Styles for error popup */
+.popup.error {
+  background-color: #ff3333; /* Red background color for error */
+}

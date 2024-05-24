@@ -1,0 +1,181 @@
+.warshat {
+  justify-content: center;
+  align-items: center;
+  background-color: #d5cece;
+  padding: 20px;
+}
+h2 {
+  align-items: center;
+  text-align: center;
+}
+.abaad {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.warshat .success-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  animation: fadeIn 3s step-start;
+  /* Initially hidden */
+  opacity: 0;
+  display: none;
+}
+
+.success-popup.show {
+  display: block;
+  /* Make it visible */
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.input11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  /* width: 300px; */
+}
+.input11 label {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 150px;
+}
+.abaad button {
+  font-size: 18px;
+  font-weight: 400;
+}
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  border: 1px solid black;
+  padding: 4px 8px;
+  display: block;
+  border-radius: 5px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+input {
+  width: 140px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 5px 5px;
+}
+
+button {
+  display: block;
+  width: 140px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.width-height-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dimension-container {
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 10px; */
+  padding: 5px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.dimension-container label {
+  margin-right: 10px;
+}
+.warshat form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Popup container */
+.success-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4caf50; /* Green background color */
+  color: #fff; /* White text color */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+  z-index: 999; /* Ensure it's above other elements */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Show animation */
+.success-popup.show {
+  opacity: 1;
+  animation: fadeInOut 3s forwards; /* Apply animation */
+}
+
+/* Keyframes for fade in and out */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
